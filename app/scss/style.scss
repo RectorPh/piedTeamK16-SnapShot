@@ -17,14 +17,16 @@ body{
     // max-width:
     // margin: 0 auto; 
 }
-// header
-@import './header.scss';
-
-//corasel
-@import './corasel.scss';
-
-// content
-@import './content.scss';
-
-// footer
+//MENU
+@import './menu.scss';
+//WELCOME BIG PICTURE
+@import './welcome.scss';
+//BACKGROUND DIV
+@import './background.scss';
+//GALLERY
+@import './gallery.scss';
+//FORM
+@import './form.scss';
+//FOOTER
 @import './footer.scss';
+

@@ -6,7 +6,7 @@
 
 html{
     font-size: 62.5%;
-    // font-family: 
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
@@ -14,8 +14,8 @@ body{
 }
 
 .container{
-    // max-width:
-    // margin: 0 auto; 
+    max-width: 1320px;
+    margin: 0 auto; 
 }
 //MENU
 @import './menu.scss';

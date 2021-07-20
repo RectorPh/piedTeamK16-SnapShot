@@ -13,13 +13,14 @@
 ### Division of work:
 * Menu: **-----------**
      ###### To-do description: 
-     ![image](https://user-images.githubusercontent.com/68959566/126251161-0ce0c6f7-2b2f-48eb-bda9-d40be4c8dc13.png)
+     ![image](https://user-images.githubusercontent.com/78588899/126299154-fd118f59-9a30-431a-af5e-70861b770c6a.png)
 * Introduction: **-----------**
      ###### To-do description: 
-     ![image](https://user-images.githubusercontent.com/68959566/126251226-9065229e-aac4-461a-af07-28e4c39217a6.png)
-* Our Work: **----------------**
+     ![image](https://user-images.githubusercontent.com/78588899/126299344-9620d5c1-0e23-4471-81cc-ed49b329702d.png)
+     ![image](https://user-images.githubusercontent.com/78588899/126299412-8e18cb2a-47ab-4391-b3af-4a6e3f9d7ee7.png)
+* Gallery: **----------------**
      ###### To-do description: 
-     ![image](https://user-images.githubusercontent.com/68959566/126251260-07e125fa-a817-445a-9acf-f2e2a661efb6.png)
+     ![image](https://user-images.githubusercontent.com/78588899/126299479-b0449b52-ed58-4a97-bfd2-2ac943159478.png)
 * Contact Us: **------------**
      ###### To-do description: 
-     ![image](https://user-images.githubusercontent.com/68959566/126251459-d318d0fe-b434-442a-8339-8aae44b7b98a.png)
+     ![image](https://user-images.githubusercontent.com/78588899/126299524-2db2fde5-5419-4cb7-aea7-8d47b23611a3.png)

@@ -1,7 +1,7 @@
 # projectStarted
 
 ## 🔥Starting project https://templatemo.com/live/templatemo_525_the_town
-  Rule: 
+  Rule: <br />
     1. Before edit any code must pull code về <br />
     2. git checkout -b chuyển nhánh trc khi làm mỗi ng 1 nhánh hong đụng main <br />
     3. Vô VSCode sau khi chuyển nhánh phải npm install liền <br />

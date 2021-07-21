@@ -2,7 +2,7 @@
 
 ## 🔥Starting project https://templatemo.com/live/templatemo_525_the_town
   Rule: 
-    1. Before edit any code must pull code về
+    1. Before edit any code must pull code về \n
     2. git checkout -b chuyển nhánh trc khi làm mỗi ng 1 nhánh hong đụng main
     3. Vô VSCode sau khi chuyển nhánh phải npm install liền
         npm install --global gulp-cli

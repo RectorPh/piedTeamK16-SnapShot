@@ -2,13 +2,13 @@
 
 ## 🔥Starting project https://templatemo.com/live/templatemo_525_the_town
   Rule: 
-    1. Before edit any code must pull code về \n
-    2. git checkout -b chuyển nhánh trc khi làm mỗi ng 1 nhánh hong đụng main
-    3. Vô VSCode sau khi chuyển nhánh phải npm install liền
-        npm install --global gulp-cli
-        Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted Lỗi 2 user
-    4. Trước khi code xài gulp images để ăn hình + gulp watch để auto chuyển từ pug vs scss về html and style
-    5. Làm xong add. commit push nhớ coi cái branch mình đang đứng- đứng trên main là phá nát code
+    1. Before edit any code must pull code về <br />
+    2. git checkout -b chuyển nhánh trc khi làm mỗi ng 1 nhánh hong đụng main <br />
+    3. Vô VSCode sau khi chuyển nhánh phải npm install liền <br />
+        npm install --global gulp-cli <br />
+        Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted Lỗi 2 user <br />
+    4. Trước khi code xài gulp images để ăn hình + gulp watch để auto chuyển từ pug vs scss về html and style <br />
+    5. Làm xong add. commit push nhớ coi cái branch mình đang đứng- đứng trên main là phá nát code <br />
 
 ### Division of work:
 * Menu: **-----------**

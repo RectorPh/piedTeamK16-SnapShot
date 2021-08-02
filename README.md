@@ -11,7 +11,7 @@
     5. Làm xong add. commit push nhớ coi cái branch mình đang đứng- đứng trên main là phá nát code <br />
 
 ### Division of work:
-* Menu: **-----------**
+* Menu: **Thien**
      ###### To-do description: 
      ![image](https://user-images.githubusercontent.com/78588899/126299154-fd118f59-9a30-431a-af5e-70861b770c6a.png)
 * Introduction: **-----------**
@@ -21,6 +21,6 @@
 * Gallery: **----------------**
      ###### To-do description: 
      ![image](https://user-images.githubusercontent.com/78588899/126299479-b0449b52-ed58-4a97-bfd2-2ac943159478.png)
-* Contact Us: **------------**
+* Contact Us: **Huy**
      ###### To-do description: 
      ![image](https://user-images.githubusercontent.com/78588899/126299524-2db2fde5-5419-4cb7-aea7-8d47b23611a3.png)

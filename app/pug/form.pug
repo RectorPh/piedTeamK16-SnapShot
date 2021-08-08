@@ -1,0 +1,14 @@
+#contact
+  .container
+    .content
+      .contact__title
+        h1 send a message
+        p
+          | Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum.
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .contact__form
+        form(action='#')
+          input#name.first-input.form-fixed.form-control(name='name' type='text' placeholder='Name')
+          input#email.form-fixed.form-control(name='email' type='email' placeholder='Email')
+          textarea#message.form-control(name='message' rows='6' placeholder='Message')
+          input.form-control(type='submit' value='SEND MESSAGE')

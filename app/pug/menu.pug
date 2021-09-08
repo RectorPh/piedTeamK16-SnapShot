@@ -5,15 +5,65 @@ header
         span
           | Snapshot
     .header__nav
-      a.header__nav-item(href='#')
+      a.header__nav-item.item1(href='#')
+        .header__deco1  
         span.header__text
           | HOME
-      a.header__nav-item(href='#')
+      a.header__nav-item.item2(href='#')
+        .header__deco2 
         span.header__text
           | ABOUT
-      a.header__nav-item(href='#')
+      a.header__nav-item.item3(href='#')
+        .header__deco3 
         span.header__text
           | GALLERY
-      a.header__nav-item(href='#')
+      a.header__nav-item.item4(href='#')
+        .header__deco4 
         span.header__text
           | CONTACT
+      script.
+        const item1 = document.querySelector('.item1');
+        const item2 = document.querySelector('.item2');
+        const item3 = document.querySelector('.item3');
+        const item4 = document.querySelector('.item4');
+        
+        item1.onclick =function(){
+        document.querySelector('.header__deco1').style.display = 'block';
+        document.querySelector('.header__deco2').style.display = 'none';
+        document.querySelector('.header__deco3').style.display = 'none';
+        document.querySelector('.header__deco4').style.display = 'none';
+        }
+        item2.onclick =function(){
+        document.querySelector('.header__deco1').style.display = 'none';
+        document.querySelector('.header__deco2').style.display = 'block';
+        document.querySelector('.header__deco3').style.display = 'none';
+        document.querySelector('.header__deco4').style.display = 'none';
+        }
+        item3.onclick =function(){
+        document.querySelector('.header__deco1').style.display = 'none';
+        document.querySelector('.header__deco2').style.display = 'none';
+        document.querySelector('.header__deco3').style.display = 'block';
+        document.querySelector('.header__deco4').style.display = 'none';
+        }
+        item4.onclick =function(){
+        document.querySelector('.header__deco1').style.display = 'none';
+        document.querySelector('.header__deco2').style.display = 'none';
+        document.querySelector('.header__deco3').style.display = 'none';
+        document.querySelector('.header__deco4').style.display = 'block';
+        }
+  input#nav-slide(type='checkbox' name='btn')
+  label.nav-btn(for='nav-slide')
+    i.fas.fa-bars
+  .header-mobile
+    a.header-mobile__nav-item(href='#')
+      span.header-mobile__text
+        | HOME
+    a.header-mobile__nav-item(href='#')
+      span.header-mobile__text
+        | ABOUT
+    a.header-mobile__nav-item(href='#')
+      span.header-mobile__text
+        | GALLERY
+    a.header-mobile__nav-item(href='#')
+      span.header-mobile__text
+        | CONTACT

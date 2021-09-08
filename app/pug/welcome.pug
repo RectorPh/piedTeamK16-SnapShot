@@ -1,0 +1,35 @@
+section.home
+  script.
+    const arr = ['./images/slide-img1.jpg','./images/slide-img2.jpg','./images/slide-img3.jpg'];
+    let index = 0;
+    const getBackground = function(){
+    let img = document.querySelector('.welcome__img');
+    let background = document.querySelector('.welcome');
+    img.style.backgroundImage = `url(${arr[index]})`
+    background.style.backgroundImage = `url(${arr[index-1]})`
+    if(index === 0){
+    background.style.backgroundImage = `url(${arr[2]})`
+    img.style.backgroundImage = `url(${arr[index]})`
+    } else {
+    background.style.backgroundImage = `url(${arr[index-1]})`
+    img.style.backgroundImage = `url(${arr[index]})`
+    }
+    // bacgroundimg.style.animation = "slide 6s ease infinite";
+    index++;
+    if(index === arr.length){
+    index = 0;
+    }
+    }
+    setInterval(getBackground, 6000);
+  .welcome
+    .welcome__img
+    .welcome__overlay
+      .welcome__content
+        h1.content__header LET&apos;S TAKE A SNAPSHOT
+        h3.content__text
+          | Snapshot website template is available for free download. Anyone can modify and use it for any site. Please tell your friends about 
+          span.red_text templatemo
+          | . Thank you.
+        .content__button
+          span
+            | Learn more

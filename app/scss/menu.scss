@@ -6,13 +6,15 @@ header{
     z-index: 1;
 }
 .header{
-    width: 77%;
+    width: 100%;
+    max-width: 1205px;
     height: 52px;
     background-color: white;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 20px;
 
     &__logo{
 
@@ -20,12 +22,19 @@ header{
 
     &__nav{
         line-height: 52px;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     &__nav-item{
         font-size: 15px;
-        padding: 15px 22px;
         text-decoration: none;
         color: #777;
+        margin: 15px 22px;
+        display: inline-block;
+        height: 39px;
+        font-weight: 300;
+        line-height: 40px;
     }
     &__logo-text{
         text-decoration: none;
@@ -36,4 +45,124 @@ header{
             color: #304352;
         }
     }
+    &__deco1{
+        border-bottom: 2px solid #304352;
+        position: relative;
+        top: 32px;
+        display: none;
+        animation: scaledeco .3s forwards;
+    }
+    &__deco2{
+        border-bottom: 2px solid #304352;
+        position: relative;
+        top: 32px;
+        display: none;
+        animation: scaledeco .3s forwards;
+    }
+    &__deco3{
+        border-bottom: 2px solid #304352;
+        position: relative;
+        top: 32px;
+        display: none;
+        animation: scaledeco .3s forwards;
+    }
+    &__deco4{
+        border-bottom: 2px solid #304352;
+        position: relative;
+        top: 32px;
+        display: none;
+        animation: scaledeco .3s forwards;
+    }
 }
+//Header mobile
+.header-mobile{
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    animation: slideOut .3s forwards;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    @media (max-width: 768px) {
+        display: block;
+        }
+    &__text{
+        line-height: 42px;
+        padding-left: 20px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    &__nav-item{
+        text-decoration: none;
+        color: #304352;
+        font-size: 14px;
+        display: block;
+        height: 42px;
+        width: 100%;
+        
+    }
+}
+
+.nav-btn{
+	display: inline-block;
+	position: relative;
+	float: top right;
+	float: right;
+	position: relative;
+	top: -35px;
+	margin: 0;
+	margin-right: 20px;
+	font-size: 25px;
+	margin-top: -6px;
+	display: none;
+    @media (max-width: 768px) {
+    display: block;
+    }
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+#nav-slide {
+	&:checked {
+		& ~ .header-mobile {
+            
+			animation: slide .3s ;
+		}
+	}
+}
+
+#nav-slide {
+	display: none;
+}
+
+//Animation
+@keyframes slide{
+    from{
+      height: 0;
+    }
+    to{
+      height: 168px;
+    }
+  }
+ 
+  @keyframes slideOut{
+    from{
+        height: 168px;
+      }
+      to{
+        height: 0;
+      }
+  }
+
+  
+@keyframes scaledeco{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  
+  

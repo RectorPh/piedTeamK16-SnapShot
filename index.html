@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snap Shot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="header__logo">
+        <a class="header__logo-text" href="#">
+          <span>Snapshot</span>
+        </a>
+      </div>
+      <div class="header__nav">
+        <a class="header__nav-item item1" href="#">
+          <div class="header__deco1"> </div>
+          <span class="header__text">HOME</span>
+        </a>
+        <a class="header__nav-item item2" href="#">
+          <div class="header__deco2"> </div>
+          <span class="header__text">ABOUT</span>
+        </a>
+        <a class="header__nav-item item3" href="#">
+          <div class="header__deco3"> </div>
+          <span class="header__text">GALLERY</span>
+        </a>
+        <a class="header__nav-item item4" href="#">
+          <div class="header__deco4"> </div>
+          <span class="header__text">CONTACT</span>
+        </a>
+        <script>const item1 = document.querySelector('.item1');
+const item2 = document.querySelector('.item2');
+const item3 = document.querySelector('.item3');
+const item4 = document.querySelector('.item4');
+
+item1.onclick =function(){
+document.querySelector('.header__deco1').style.display = 'block';
+document.querySelector('.header__deco2').style.display = 'none';
+document.querySelector('.header__deco3').style.display = 'none';
+document.querySelector('.header__deco4').style.display = 'none';
+}
+item2.onclick =function(){
+document.querySelector('.header__deco1').style.display = 'none';
+document.querySelector('.header__deco2').style.display = 'block';
+document.querySelector('.header__deco3').style.display = 'none';
+document.querySelector('.header__deco4').style.display = 'none';
+}
+item3.onclick =function(){
+document.querySelector('.header__deco1').style.display = 'none';
+document.querySelector('.header__deco2').style.display = 'none';
+document.querySelector('.header__deco3').style.display = 'block';
+document.querySelector('.header__deco4').style.display = 'none';
+}
+item4.onclick =function(){
+document.querySelector('.header__deco1').style.display = 'none';
+document.querySelector('.header__deco2').style.display = 'none';
+document.querySelector('.header__deco3').style.display = 'none';
+document.querySelector('.header__deco4').style.display = 'block';
+}</script>
+      </div>
+    </div>
+    <input id="nav-slide" type="checkbox" name="btn">
+    <label class="nav-btn" for="nav-slide">
+      <i class="fas fa-bars"></i>
+    </label>
+    <div class="header-mobile">
+      <a class="header-mobile__nav-item" href="#">
+        <span class="header-mobile__text">HOME</span>
+      </a>
+      <a class="header-mobile__nav-item" href="#">
+        <span class="header-mobile__text">ABOUT</span>
+      </a>
+      <a class="header-mobile__nav-item" href="#">
+        <span class="header-mobile__text">GALLERY</span>
+      </a>
+      <a class="header-mobile__nav-item" href="#">
+        <span class="header-mobile__text">CONTACT</span>
+      </a>
+    </div>
+  </header>
+  <section class="home">
+    <script>const arr = ['./images/slide-img1.jpg','./images/slide-img2.jpg','./images/slide-img3.jpg'];
+let index = 0;
+const getBackground = function(){
+let img = document.querySelector('.welcome__img');
+let background = document.querySelector('.welcome');
+img.style.backgroundImage = `url(${arr[index]})`
+background.style.backgroundImage = `url(${arr[index-1]})`
+if(index === 0){
+background.style.backgroundImage = `url(${arr[2]})`
+img.style.backgroundImage = `url(${arr[index]})`
+} else {
+background.style.backgroundImage = `url(${arr[index-1]})`
+img.style.backgroundImage = `url(${arr[index]})`
+}
+// bacgroundimg.style.animation = "slide 6s ease infinite";
+index++;
+if(index === arr.length){
+index = 0;
+}
+}
+setInterval(getBackground, 6000);</script>
+    <div class="welcome">
+      <div class="welcome__img"></div>
+      <div class="welcome__overlay">
+        <div class="welcome__content">
+          <h1 class="content__header">LET&apos;S TAKE A SNAPSHOT</h1>
+          <h3 class="content__text">Snapshot website template is available for free download. Anyone can modify and use it for any site. Please tell your friends about <span class="red_text">templatemo</span>. Thank you.</h3>
+          <div class="content__button">
+            <span>Learn more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="welcome_about_us">
+    <div class="container">
+      <div class="welcome_container">
+        <div class="welcome_container_content">
+          <h1>BACKGROUND</h1>
+          <p>Quisque tempor bibendum dolor at volutpat. Suspendisse venenatis quam sed libero euismod feugiat. In cursus nisi vitae lectus facilisis mollis. Nullam scelerisque, quam nec iaculis vulputate.</p>
+        </div>
+        <img src="./images/about-img.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="ourteam">
+    <div class="container">
+      <div class="ourteam_text">
+        <h1>SNAPSHOT TEAM</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum repudiandae, sint commodi non rem</p>
+      </div>
+      <div class="ourteam_cards_container">
+        <div class="ourteam_cards_container-col4">
+          <div class="ourteam_card">
+            <img src="./images/team-img1.jpg" alt="">
+            <h2>MARY, CEO</h2>
+          </div>
+        </div>
+        <div class="ourteam_cards_container-col4">
+          <div class="ourteam_card">
+            <img src="./images/team-img2.jpg" alt="">
+            <h2>JACK, FOUNDER</h2>
+          </div>
+        </div>
+        <div class="ourteam_cards_container-col4">
+          <div class="ourteam_card">
+            <img src="./images/team-img3.jpg" alt="">
+            <h2>LINDA, MANAGER</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="gallery__header">
+      <h1 class="gallery__header__text">GALLERY</h1>
+      <p class="gallery__header__content">Nullam scelerisque, quam nec iaculis vulputate, arcu ligula sollicitudin nisl, ac volutpat erat nulla a arcu.</p>
+    </div>
+    <div class="gallery__img">
+      <div class="img_content content1">
+        <img class="img1" src="./images/gallery-img1.jpg" alt="">
+        <div class="over__text over1">
+          <h1>SAPIEN ARCU</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+          <a>Read More</a>
+        </div>
+      </div>
+      <div class="img_content content2">
+        <img class="img2" src="./images/gallery-img2.jpg" alt="">
+        <div class="over__text over2">
+          <h1>SAPIEN ARCU</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+          <a>Read More</a>
+        </div>
+      </div>
+      <div class="img_content content3">
+        <img class="img3" src="./images/gallery-img3.jpg" alt="">
+        <div class="over__text over3">
+          <h1>SAPIEN ARCU</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+          <a>Read More</a>
+        </div>
+      </div>
+      <div class="img_content content4">
+        <img class="img4" src="./images/gallery-img4.jpg" alt="">
+        <div class="over__text over4">
+          <h1>SAPIEN ARCU</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+          <a>Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="contact">
+    <div class="container">
+      <div class="content">
+        <div class="contact__title">
+          <h1>send a message</h1>
+          <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="contact__form">
+          <form action="#">
+            <input class="first-input form-fixed form-control" id="name" name="name" type="text" placeholder="Name">
+            <input class="form-fixed form-control" id="email" name="email" type="email" placeholder="Email">
+            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message"></textarea>
+            <input class="form-control" type="submit" value="SEND MESSAGE">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <ul class="socials">
+        <li>
+          <a class="fab fa-facebook-f" href="#"></a>
+        </li>
+        <li>
+          <a class="fab fa-twitter" href="#"></a>
+        </li>
+        <li>
+          <a class="fab fa-linkedin-in" href="#"></a>
+        </li>
+        <li>
+          <a class="fab fa-instagram" href="#"></a>
+        </li>
+        <li>
+          <a class="fab fa-google-plus-g" href="#"></a>
+        </li>
+      </ul>
+      <p>Copyright &copy; 2016 Snapshot Studio | Design:<a href="https://plus.google.com/+templatemo" title="free css templates" target="_blank">Templatemo</a>
+      </p>
+    </div>
+  </div>
+  <a href="#" class="go-top" style="display: inline;">
+    <i class="fa fa-angle-up"></i>
+  </a>
+</body>
+
+</html>
